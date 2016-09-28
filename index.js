@@ -5,7 +5,7 @@ var generateHmac = function(data, iiotSecretKey, algorithm, encoding) {
   encoding = encoding || "base64";
   algorithm = algorithm || "sha256";
 
-  console.log(crypto.createHmac(algorithm, iiotSecretKey).update(data).digest(encoding));
+  //console.log(crypto.createHmac(algorithm, iiotSecretKey).update(data).digest(encoding));
   return crypto.createHmac(algorithm, iiotSecretKey).update(data).digest(encoding);
 }
 
